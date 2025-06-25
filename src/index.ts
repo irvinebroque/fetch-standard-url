@@ -13,8 +13,8 @@
 
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
-		const url = `  https://cloudflare.com
-		/   `;
+		const url = `https://example.vercel.sh
+/`;
 		return fetch(`${url}`);
 	},
 } satisfies ExportedHandler<Env>;
