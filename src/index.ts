@@ -13,6 +13,8 @@
 
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
-		return new Response('Hello World!');
+		const url = `  https://cloudflare.com
+		/   `;
+		return fetch(`${url}`);
 	},
 } satisfies ExportedHandler<Env>;
